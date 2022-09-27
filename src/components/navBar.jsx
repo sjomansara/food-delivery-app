@@ -39,7 +39,7 @@ const MyNavbar = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-            <Nav.Link href="#home"><FontAwesomeIcon icon={faBagShopping} id="arrow-down" /></Nav.Link>
+            <Nav.Link href="#home"><span><img style={{ maxWidth: "1.6rem" }} src="images/ShoppingBagOpen1.png"/></span></Nav.Link>
             <div className="ms-2"><PillButton text={pillText}/></div>
             </Nav>
           </Navbar.Collapse>

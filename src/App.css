@@ -51,3 +51,8 @@ margin-bottom: 0.1rem;
     --bs-navbar-disabled-color: #000000 !important;
     --bs-navbar-active-color: #000000 !important;
 }
+
+.pillButton {
+  background-color: #E63946 !important;
+  border: 0 !important;
+}

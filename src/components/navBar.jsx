@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Container } from 'react-bootstrap';
+import PillButton from './PillButton';
 
 const CustomToggle = forwardRef(({ children, onClick }, ref) => (
   <FontAwesomeIcon className="custom-toggle" icon={faChevronDown} id="arrow-down"href=""
@@ -38,6 +39,7 @@ const MyNavbar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             <Nav.Link href="#home"><FontAwesomeIcon icon={faBagShopping} id="arrow-down" /></Nav.Link>
+            <PillButton/>
             </Nav>
           </Navbar.Collapse>
         </Container>

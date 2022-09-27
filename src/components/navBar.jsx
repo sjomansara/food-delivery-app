@@ -20,10 +20,11 @@ const CustomToggle = forwardRef(({ children, onClick }, ref) => (
 ));
 
 const MyNavbar = () => {
+    const pillText = 'Sign up';
     return (
         <Navbar bg="white" expand="lg" className="navbarFont">
         <Container>
-          <Navbar.Brand href="#home"><img src="images/verydeli6.png"/></Navbar.Brand>
+          <Navbar.Brand href="#home"><img style={{ maxWidth: "8rem" }} src="images/verydeli6.png"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -39,7 +40,7 @@ const MyNavbar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             <Nav.Link href="#home"><FontAwesomeIcon icon={faBagShopping} id="arrow-down" /></Nav.Link>
-            <PillButton/>
+            <div className="ms-2"><PillButton text={pillText}/></div>
             </Nav>
           </Navbar.Collapse>
         </Container>

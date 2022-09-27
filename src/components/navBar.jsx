@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Row, Container, Col, Dropdown } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const CustomToggle = forwardRef(({ children, onClick }, ref) => (
   <FontAwesomeIcon className="custom-toggle" icon={faChevronDown} id="arrow-down"href=""
@@ -20,9 +20,9 @@ const CustomToggle = forwardRef(({ children, onClick }, ref) => (
 
 const MyNavbar = () => {
     return (
-        <Navbar bg="white" expand="lg">
+        <Navbar bg="white" expand="lg" className="navbarFont">
         <Container>
-          <Navbar.Brand href="#home"><img src="images/verydeli4.png"/></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src="images/verydeli6.png"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

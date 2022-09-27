@@ -30,19 +30,24 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .dropdown-toggle::after {
   display: none !important;
 }
 
 .custom-toggle {
 font-size: 10px;
+margin-left: 0.25rem;
+margin-bottom: 0.1rem;
+}
+
+.navbarFont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.navbar {
+    --bs-navbar-color: #2F2E41 !important;
+    --bs-navbar-hover-color: #000000 !important;
+    --bs-navbar-disabled-color: #000000 !important;
+    --bs-navbar-active-color: #000000 !important;
 }
